@@ -1,0 +1,48 @@
+/*!***********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/pages/components/navBar.vue?vue&type=style&index=0&id=d18f6e96&lang=css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************/
+
+.underline-on-hover
+     {
+      position: relative;
+      display: inline-block;
+}
+.underline-on-hover::after 
+    {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 100%;
+      height: 1px;
+      background-color: transparent;
+      transition: background-color 0.3s ease;
+}
+.underline-on-hover:hover::after 
+    {
+      background-color: white; /* Couleur de soulignement au survol */
+}
+
+
+/*!**********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/pages/components/recap.vue?vue&type=style&index=0&id=dedd8fec&scoped=true&lang=css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************/
+
+.settings[data-v-dedd8fec]{
+      padding-top:5px;
+}
+    
+/*!********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/admin/scss/admin.scss ***!
+  \********************************************************************************************************************/
+body {
+  margin: 0;
+}
+
+.wrap {
+  margin: 0;
+}
+
+#wpcontent {
+  padding-left: 0;
+}

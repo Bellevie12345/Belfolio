@@ -1,0 +1,645 @@
+
+<template>
+  <div class="table-container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Colonne 1</th>
+          <th>Colonne 2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Utilisation de v-for pour parcourir les éléments du tableau -->
+        <tr v-for="(item, index) in items" :key="index">
+          <td>{{ item.column1 }}</td>
+          <td>{{ item.column2 }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      // Exemple de données pour le tableau
+      items: [
+        { column1: 'Donnée 1A', column2: 'Donnée 1B' },
+        { column1: 'Donnée 2A', column2: 'Donnée 2B' },
+        { column1: 'Donnée 3A', column2: 'Donnée 3B' }
+        // Ajoutez autant d'éléments que nécessaire
+      ]
+    };
+  }
+};
+</script>
+
+<style scoped>
+.table-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #f2f2f2;
+}
+</style>
+
+
+
+
+
+
+
+
+<template>
+  <div>
+    <table class="table-auto">
+      <thead>
+        <tr>
+          <th class="px-4 py-2">Identifiant</th>
+          <th class="px-4 py-2">Valeur</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="(value, key) in meta" :key="key">
+          <td class="border px-4 py-2">{{ key }}</td>
+          <td class="border px-4 py-2">{{ value }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      meta: {
+        identifier: 'Valeur de l\'identifiant',
+        photo: 'Valeur de la photo',
+        realization: 'Valeur de la réalisation',
+        profile: 'Valeur du profil',
+        profession: 'Valeur de la profession',
+        description: 'Valeur de la description',
+        skills: 'Valeur des compétences',
+        education: 'Valeur de l\'éducation',
+        experience: 'Valeur de l\'expérience',
+        cv: 'Valeur du CV',
+        contact: 'Valeur du contact',
+        email: 'Valeur de l\'e-mail',
+        network: 'Valeur du réseau'
+      }
+    };
+  }
+};
+</script>
+
+<style scoped>
+/* Styles spécifiques au composant */
+</style>
+
+
+<template>
+  <div>
+    <table class="table-auto">
+      <thead>
+        <tr>
+          <th class="px-4 py-2">Identifiant</th>
+          <th class="px-4 py-2">Valeur</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="(value, key) in meta" :key="key">
+          <td class="border px-4 py-2">{{ key }}</td>
+          <td class="border px-4 py-2">{{ value }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      meta: {
+        identifier: 'Valeur de l\'identifiant',
+        photo: 'Valeur de la photo',
+        realization: 'Valeur de la réalisation',
+        profile: 'Valeur du profil',
+        profession: 'Valeur de la profession',
+        description: 'Valeur de la description',
+        skills: 'Valeur des compétences',
+        education: 'Valeur de l\'éducation',
+        experience: 'Valeur de l\'expérience',
+        cv: 'Valeur du CV',
+        contact: 'Valeur du contact',
+        email: 'Valeur de l\'email',
+        network: 'Valeur du réseau'
+      }
+    };
+  }
+};
+</script>
+
+<style scoped>
+/* Styles CSS personnalisés pour votre tableau */
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+formulaire de contact:
+<div class="InputTitle w-[1210px] h-[73px] relative">
+  <div class="Skills left-0 top-0 absolute text-neutral-800 text-sm font-semibold font-['Red Hat Text']">Skills </div>
+  <div class="Rectangle2661 w-[1210px] h-[45px] left-0 top-[28px] absolute bg-white rounded-[5px] border border-neutral-600"></div>
+  <div class="FormkitDown w-4 h-[7px] pl-[3px] pr-[2.99px] pt-px pb-[0.49px] left-[1167px] top-[49px] absolute justify-center items-center inline-flex"></div>
+  <div class="Frame19352923 w-[412px] h-8 left-[12px] top-[35px] absolute justify-start items-start gap-[11px] inline-flex">
+    <div class="Frame19352922 px-2.5 py-1.5 bg-zinc-100 rounded-[11px] justify-center items-center gap-2.5 flex">
+      <div class="Flutter text-neutral-700 text-xs font-medium font-['Montserrat'] leading-[19px]">Flutter</div>
+      <div class="CarbonCloseFilled w-5 h-5 p-[1.25px] justify-center items-center flex"></div>
+    </div>
+    <div class="Frame19352923 px-2.5 py-1.5 bg-zinc-100 rounded-[11px] justify-center items-center gap-2.5 flex">
+      <div class="Php text-neutral-700 text-xs font-medium font-['Montserrat'] leading-[19px]">Php</div>
+      <div class="CarbonCloseFilled w-5 h-5 p-[1.25px] justify-center items-center flex"></div>
+    </div>
+    <div class="Frame19352925 px-2.5 py-1.5 bg-zinc-100 rounded-[11px] justify-center items-center gap-2.5 flex">
+      <div class="Wordpress text-neutral-700 text-xs font-medium font-['Montserrat'] leading-[19px]">WORDPRESS</div>
+      <div class="CarbonCloseFilled w-5 h-5 p-[1.25px] justify-center items-center flex"></div>
+    </div>
+    <div class="Frame19352926 px-2.5 py-1.5 bg-zinc-100 rounded-[11px] justify-center items-center gap-2.5 flex">
+      <div class="Adonis text-neutral-700 text-xs font-medium font-['Montserrat'] leading-[19px]">Adonis</div>
+      <div class="CarbonCloseFilled w-5 h-5 p-[1.25px] justify-center items-center flex"></div>
+    </div>
+    <div class="Frame19352927 px-2.5 py-1.5 bg-zinc-100 rounded-[11px] justify-center items-center gap-2.5 flex">
+      <div class="HtlmCss text-neutral-700 text-xs font-medium font-['Montserrat'] leading-[19px]">HTLM CSS</div>
+      <div class="CarbonCloseFilled w-5 h-5 p-[1.25px] justify-center items-center flex"></div>
+    </div>
+  </div>
+</div>
+fin
+FORMATION PROFESSIONELLE
+<div class="Group19352953 w-[1210px] h-[532px] relative">
+  <!-- Conteneur principal pour les sections de compétences, d'expériences et d'éducation -->
+  <div class="Group19352977 w-[1210px] h-[532px] left-0 top-0 absolute">
+    <!-- Section des compétences -->
+    <div class="InputTitle w-[1210px] h-[73px] left-0 top-0 absolute">
+      <!-- Titre de la section des compétences -->
+      <div class="Skills left-0 top-0 absolute text-neutral-800 text-sm font-semibold font-['Red Hat Text']">Skills</div>
+      <!-- Rectangle pour la section des compétences -->
+      <div class="Rectangle2661 w-[1210px] h-[45px] left-0 top-[28px] absolute bg-white rounded-[5px] border border-neutral-600"></div>
+      <!-- Élément décoratif pour la section des compétences -->
+      <div class="FormkitDown w-4 h-[7px] pl-[3px] pr-[2.99px] pt-px pb-[0.49px] left-[1167px] top-[49px] absolute justify-center items-center inline-flex"></div>
+      <!-- Cadres individuels pour chaque compétence -->
+      <div class="Frame19352923 w-[412px] h-8 left-[12px] top-[35px] absolute justify-start items-start gap-[11px] inline-flex">
+        <!-- Cadre pour Flutter -->
+        <div class="Frame19352922 px-2.5 py-1.5 bg-zinc-100 rounded-[11px] justify-center items-center gap-2.5 flex">
+          <div class="Flutter text-neutral-700 text-xs font-medium font-['Montserrat'] leading-[19px]">Flutter</div>
+          <div class="CarbonCloseFilled w-5 h-5 p-[1.25px] justify-center items-center flex"></div>
+        </div>
+        <!-- Cadre pour Php -->
+        <div class="Frame19352923 px-2.5 py-1.5 bg-zinc-100 rounded-[11px] justify-center items-center gap-2.5 flex">
+          <div class="Php text-neutral-700 text-xs font-medium font-['Montserrat'] leading-[19px]">Php</div>
+          <div class="CarbonCloseFilled w-5 h-5 p-[1.25px] justify-center items-center flex"></div>
+        </div>
+        <!-- Cadre pour Wordpress -->
+        <div class="Frame19352925 px-2.5 py-1.5 bg-zinc-100 rounded-[11px] justify-center items-center gap-2.5 flex">
+          <div class="Wordpress text-neutral-700 text-xs font-medium font-['Montserrat'] leading-[19px]">WORDPRESS</div>
+          <div class="CarbonCloseFilled w-5 h-5 p-[1.25px] justify-center items-center flex"></div>
+        </div>
+        <!-- Cadre pour Adonis -->
+        <div class="Frame19352926 px-2.5 py-1.5 bg-zinc-100 rounded-[11px] justify-center items-center gap-2.5 flex">
+          <div class="Adonis text-neutral-700 text-xs font-medium font-['Montserrat'] leading-[19px]">Adonis</div>
+          <div class="CarbonCloseFilled w-5 h-5 p-[1.25px] justify-center items-center flex"></div>
+        </div>
+        <!-- Cadre pour HTML CSS -->
+        <div class="Frame19352927 px-2.5 py-1.5 bg-zinc-100 rounded-[11px] justify-center items-center gap-2.5 flex">
+          <div class="HtlmCss text-neutral-700 text-xs font-medium font-['Montserrat'] leading-[19px]">HTLM CSS</div>
+          <div class="CarbonCloseFilled w-5 h-5 p-[1.25px] justify-center items-center flex"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Section pour ajouter le CV -->
+    <div class="Group19352954 w-[1204px] h-[73px] left-[6px] top-[459px] absolute">
+      <!-- Titre pour l'ajout du CV -->
+      <div class="InputTitle w-[590px] h-[73px] left-0 top-0 absolute">
+        <div class="UploaderVotreCv left-0 top-0 absolute text-neutral-800 text-sm font-semibold font-['Red Hat Text']">Uploader votre cv</div>
+        <!-- Rectangle pour l'ajout du CV -->
+        <div class="Rectangle2661 w-[590px] h-[45px] left-0 top-[28px] absolute bg-white rounded-[5px] border border-neutral-600"></div>
+        <!-- Bouton pour l'ajout du CV -->
+        <div class="Rectangle2662 w-[51px] h-[45px] left-[539px] top-[28px] absolute bg-pink-600 rounded-[5px]"></div>
+      </div>
+      <!-- Section pour ajouter la lettre de recommandation -->
+      <div class="InputTitle w-[576px] h-[73px] left-[628px] top-0 absolute">
+        <!-- Titre pour l'ajout de la lettre de recommandation -->
+        <div class="UploaderVotreLettreDeRecommandation left-0 top-0 absolute text-neutral-800 text-sm font-semibold font-['Red Hat Text']">Uploader votre Lettre de recommandation</div>
+        <!-- Rectangle pour l'ajout de la lettre de recommandation -->
+        <div class="Rectangle2661 w-[576px] h-[45px] left-0 top-[28px] absolute bg-white rounded-[5px] border border-neutral-600"></div>
+        <!-- Bouton pour l'ajout de la lettre de recommandation -->
+        <div class="Rectangle2662 w-[50px] h-[45px] left-[526px] top-[28px] absolute bg-pink-600 rounded-[5px]"></div>
+      </div>
+    </div>
+    <!-- Section pour les expériences -->
+    <div class="InputTitle w-[577px] h-[73px] left-[633px] top-[119px] absolute">
+      <!-- Titre pour les expériences -->
+      <div class="ExpRiences left-0 top-0 absolute text-neutral-800 text-sm font-semibold font-['Red Hat Text']">Expériences</div>
+      <!-- Rectangle pour les expériences -->
+      <div class="Rectangle2661 w-[577px] h-[45px] left-0 top-[28px] absolute bg-white rounded-[5px] border border-neutral-600"></div>
+      <!-- Cadres individuels pour chaque expérience -->
+      <div class="Frame19352923 w-[412px] h-8 left-[12px] top-[35px] absolute justify-start items-start gap-[11px] inline-flex">
+        <!-- Cadres pour les expériences -->
+        <!-- (Identique à la section des compétences) -->
+      </div>
+    </div>
+    <!-- Section pour ajouter une nouvelle expérience -->
+    <div class="Experience2 w-[577px] h-[117px] left-[633px] top-[216px] absolute">
+      <!-- Groupes pour chaque aspect de l'expérience -->
+      <!-- (Identique à la section des expériences) -->
+    </div>
+    <!-- Bouton pour ajouter une nouvelle expérience -->
+    <div class="Ajouter1 w-[130px] h-[47px] px-[70px] py-3.5 left-0 top-[361px] absolute bg-pink-600 rounded-[5px] shadow border border-zinc-100 justify-center items-center gap-2.5 inline-flex">
+      <div class="Ajouter text-white text-sm font-semibold font-['Montserrat'] leading-[22.96px]">Ajouter</div>
+    </div>
+    <!-- Section pour l'éducation -->
+    <div class="InputTitle w-[596px] h-[73px] left-0 top-[120px] absolute">
+      <!-- Titre pour l'éducation -->
+      <div class="Education left-0 top-0 absolute text-neutral-800 text-sm font-semibold font-['Red Hat Text']">Education</div>
+      <!-- Rectangle pour l'éducation -->
+      <div class="Rectangle2661 w-[596px] h-[45px] left-0 top-[28px] absolute bg-white rounded-[5px] border border-neutral-600"></div>
+      <!-- Bouton pour ajouter un diplôme ou une formation -->
+      <div class="Rectangle2662 w-[51px] h-[45px] left-[545px] top-[28px] absolute bg-pink-600 rounded-[5px]"></div>
+      <!-- Cadres individuels pour chaque diplôme ou formation -->
+      <div class="Frame19352923 w-[412px] h-8 left-[12px] top-[35px] absolute justify-start items-start gap-[11px] inline-flex">
+        <!-- Cadres pour les diplômes ou formations -->
+        <!-- (Identique à la section des compétences) -->
+      </div>
+    </div>
+    <!-- Section pour ajouter un nouveau diplôme ou une nouvelle formation -->
+    <div class="Group19352942 w-[596px] h-[179px] left-0 top-[155px] absolute">
+      <!-- Groupes pour chaque aspect du diplôme ou de la formation -->
+      <!-- (Identique à la section des expériences) -->
+    </div>
+    <!-- Bouton pour ajouter un nouveau diplôme ou une nouvelle formation -->
+    <div class="Ajouter2 w-[130px] h-[47px] px-[70px] py-3.5 left-[634px] top-[351px] absolute bg-pink-600 rounded-[5px] shadow border border-zinc-100 justify-center items-center gap-2.5 inline-flex">
+      <div class="Ajouter text-white text-sm font-semibold font-['Montserrat'] leading-[22.96px]">Ajouter</div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+champs d'un formulaire
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire avec tous les champs possibles</title>
+</head>
+<body>
+    <form action="#" method="POST">
+        <!-- Champ de texte -->
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required><br><br>
+
+        <!-- Champ d'email -->
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Champ de mot de passe -->
+        <label for="mot_de_passe">Mot de passe :</label>
+        <input type="password" id="mot_de_passe" name="mot_de_passe" required><br><br>
+
+        <!-- Champ de numéro de téléphone -->
+        <label for="telephone">Téléphone :</label>
+        <input type="tel" id="telephone" name="telephone"><br><br>
+
+        <!-- Champ de date -->
+        <label for="date_naissance">Date de naissance :</label>
+        <input type="date" id="date_naissance" name="date_naissance"><br><br>
+
+        <!-- Champ de sélection -->
+        <label for="pays">Pays :</label>
+        <select id="pays" name="pays">
+            <option value="france">France</option>
+            <option value="espagne">Espagne</option>
+            <option value="italie">Italie</option>
+            <option value="royaume_uni">Royaume-Uni</option>
+        </select><br><br>
+
+        <!-- Champ de checkbox -->
+        <label for="interets">Intérêts :</label><br>
+        <input type="checkbox" id="sport" name="interets" value="sport">
+        <label for="sport">Sport</label><br>
+        <input type="checkbox" id="musique" name="interets" value="musique">
+        <label for="musique">Musique</label><br>
+        <input type="checkbox" id="lecture" name="interets" value="lecture">
+        <label for="lecture">Lecture</label><br><br>
+
+        <!-- Champ de radio -->
+        <label for="genre">Genre :</label><br>
+        <input type="radio" id="homme" name="genre" value="homme">
+        <label for="homme">Homme</label><br>
+        <input type="radio" id="femme" name="genre" value="femme">
+        <label for="femme">Femme</label><br>
+        <input type="radio" id="autre" name="genre" value="autre">
+        <label for="autre">Autre</label><br><br>
+
+        <!-- Champ de texte multiligne -->
+        <label for="commentaires">Commentaires :</label><br>
+        <textarea id="commentaires" name="commentaires" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Champ de fichier -->
+        <label for="fichier">Fichier :</label>
+        <input type="file" id="fichier" name="fichier"><br><br>
+
+        <!-- Champ de bouton -->
+        <input type="submit" value="Envoyer">
+    </form>
+</body>
+</html>
+contact et adresse
+formations proffetionelle
+<div class="Group19352953 w-[1379px] h-[642px] relative">
+  <div class="Group19352977 w-[1379px] h-[642px] left-0 top-0 absolute">
+    <div class="InputTitle w-[1210px] h-[73px] left-[169px] top-[110px] absolute">
+      <div class="Skills left-0 top-0 absolute text-neutral-800 text-sm font-semibold font-['Red Hat Text']">Skills </div>
+      <div class="Rectangle2661 w-[1210px] h-[45px] left-0 top-[28px] absolute bg-white rounded-[5px] border border-neutral-600"></div>
+      <div class="FormkitDown w-4 h-[7px] pl-[3px] pr-[2.99px] pt-px pb-[0.49px] left-[1167px] top-[49px] absolute justify-center items-center inline-flex"></div>
+      <div class="Frame19352923 w-[412px] h-8 left-[12px] top-[35px] absolute justify-start items-start gap-[11px] inline-flex">
+        <div class="Frame19352922 px-2.5 py-1.5 bg-zinc-100 rounded-[11px] justify-center items-center gap-2.5 flex">
+          <div class="Flutter text-neutral-700 text-xs font-medium font-['Montserrat'] leading-[19px]">Flutter</div>
+          <div class="CarbonCloseFilled w-5 h-5 p-[1.25px] justify-center items-center flex"></div>
+        </div>
+        <div class="Frame19352923 px-2.5 py-1.5 bg-zinc-100 rounded-[11px] justify-center items-center gap-2.5 flex">
+          <div class="Php text-neutral-700 text-xs font-medium font-['Montserrat'] leading-[19px]">Php</div>
+          <div class="CarbonCloseFilled w-5 h-5 p-[1.25px] justify-center items-center flex"></div>
+        </div>
+        <div class="Frame19352925 px-2.5 py-1.5 bg-zinc-100 rounded-[11px] justify-center items-center gap-2.5 flex">
+          <div class="Wordpress text-neutral-700 text-xs font-medium font-['Montserrat'] leading-[19px]">WORDPRESS</div>
+          <div class="CarbonCloseFilled w-5 h-5 p-[1.25px] justify-center items-center flex"></div>
+        </div>
+        <div class="Frame19352926 px-2.5 py-1.5 bg-zinc-100 rounded-[11px] justify-center items-center gap-2.5 flex">
+          <div class="Adonis text-neutral-700 text-xs font-medium font-['Montserrat'] leading-[19px]">Adonis</div>
+          <div class="CarbonCloseFilled w-5 h-5 p-[1.25px] justify-center items-center flex"></div>
+        </div>
+        <div class="Frame19352927 px-2.5 py-1.5 bg-zinc-100 rounded-[11px] justify-center items-center gap-2.5 flex">
+          <div class="HtlmCss text-neutral-700 text-xs font-medium font-['Montserrat'] leading-[19px]">HTLM CSS</div>
+          <div class="CarbonCloseFilled w-5 h-5 p-[1.25px] justify-center items-center flex"></div>
+        </div>
+      </div>
+    </div>
+    <div class="Group19352954 w-[1204px] h-[73px] left-[175px] top-[569px] absolute">
+      <div class="InputTitle w-[590px] h-[73px] left-0 top-0 absolute">
+        <div class="UploaderVotreCv left-0 top-0 absolute text-neutral-800 text-sm font-semibold font-['Red Hat Text']">Uploader votre cv </div>
+        <div class="Rectangle2661 w-[590px] h-[45px] left-0 top-[28px] absolute bg-white rounded-[5px] border border-neutral-600"></div>
+        <div class="Rectangle2662 w-[51px] h-[45px] left-[539px] top-[28px] absolute bg-pink-600 rounded-[5px]"></div>
+      </div>
+      <div class="InputTitle w-[576px] h-[73px] left-[628px] top-0 absolute">
+        <div class="UploaderVotreLettreDeRecommandation left-0 top-0 absolute text-neutral-800 text-sm font-semibold font-['Red Hat Text']">Uploader votre Lettre de recommandation</div>
+        <div class="Rectangle2661 w-[576px] h-[45px] left-0 top-[28px] absolute bg-white rounded-[5px] border border-neutral-600"></div>
+        <div class="Rectangle2662 w-[50px] h-[45px] left-[526px] top-[28px] absolute bg-pink-600 rounded-[5px]"></div>
+      </div>
+    </div>
+    <div class="InputTitle w-[577px] h-[73px] left-[802px] top-[229px] absolute">
+      <div class="ExpRiences left-0 top-0 absolute text-neutral-800 text-sm font-semibold font-['Red Hat Text']">Expériences</div>
+      <div class="Rectangle2661 w-[577px] h-[45px] left-0 top-[28px] absolute bg-white rounded-[5px] border border-neutral-600"></div>
+      <div class="Frame19352923 w-[412px] h-8 left-[12px] top-[35px] absolute justify-start items-start gap-[11px] inline-flex">
+        <div class="Frame19352922 px-2.5 py-1.5 bg-zinc-100 rounded-[11px] justify-center items-center gap-2.5 flex">
+          <div class="Flutter text-neutral-700 text-xs font-medium font-['Montserrat'] leading-[19px]">Flutter</div>
+          <div class="CarbonCloseFilled w-5 h-5 p-[1.25px] justify-center items-center flex"></div>
+        </div>
+        <div class="Frame19352923 px-2.5 py-1.5 bg-zinc-100 rounded-[11px] justify-center items-center gap-2.5 flex">
+          <div class="Php text-neutral-700 text-xs font-medium font-['Montserrat'] leading-[19px]">Php</div>
+          <div class="CarbonCloseFilled w-5 h-5 p-[1.25px] justify-center items-center flex"></div>
+        </div>
+        <div class="Frame19352925 px-2.5 py-1.5 bg-zinc-100 rounded-[11px] justify-center items-center gap-2.5 flex">
+          <div class="Wordpress text-neutral-700 text-xs font-medium font-['Montserrat'] leading-[19px]">WORDPRESS</div>
+          <div class="CarbonCloseFilled w-5 h-5 p-[1.25px] justify-center items-center flex"></div>
+        </div>
+        <div class="Frame19352926 px-2.5 py-1.5 bg-zinc-100 rounded-[11px] justify-center items-center gap-2.5 flex">
+          <div class="Adonis text-neutral-700 text-xs font-medium font-['Montserrat'] leading-[19px]">Adonis</div>
+          <div class="CarbonCloseFilled w-5 h-5 p-[1.25px] justify-center items-center flex"></div>
+        </div>
+        <div class="Frame19352927 px-2.5 py-1.5 bg-zinc-100 rounded-[11px] justify-center items-center gap-2.5 flex">
+          <div class="HtlmCss text-neutral-700 text-xs font-medium font-['Montserrat'] leading-[19px]">HTLM CSS</div>
+          <div class="CarbonCloseFilled w-5 h-5 p-[1.25px] justify-center items-center flex"></div>
+        </div>
+      </div>
+    </div>
+    <div class="Group19352949 w-72 h-[45px] left-[802px] top-[326px] absolute">
+      <div class="Rectangle2663 w-72 h-[45px] left-0 top-0 absolute bg-white rounded-[5px] border border-neutral-600"></div>
+      <div class="NomDeLEntreprise left-[12px] top-[13px] absolute text-neutral-700 text-xs font-medium font-['Montserrat'] leading-[19px]">Nom de l’entreprise</div>
+    </div>
+    <div class="Group19352952 w-72 h-[45px] left-[803px] top-[398px] absolute">
+      <div class="Rectangle2663 w-72 h-[45px] left-0 top-0 absolute bg-white rounded-[5px] border border-neutral-600"></div>
+      <div class="Adresse left-[12px] top-[13px] absolute text-neutral-700 text-xs font-medium font-['Montserrat'] leading-[19px]">Adresse</div>
+    </div>
+    <div class="Group19352951 w-[272px] h-[45px] left-[1107px] top-[398px] absolute">
+      <div class="Rectangle2663 w-[272px] h-[45px] left-0 top-0 absolute bg-white rounded-[5px] border border-neutral-600"></div>
+      <div class="DateDeFin left-[12px] top-[13px] absolute text-neutral-700 text-xs font-medium font-['Montserrat'] leading-[19px]">Date de fin</div>
+    </div>
+    <div class="Group19352950 w-[272px] h-[45px] left-[1107px] top-[326px] absolute">
+      <div class="Rectangle2663 w-[272px] h-[45px] left-0 top-0 absolute bg-white rounded-[5px] border border-neutral-600"></div>
+      <div class="DateDeDBut left-[12px] top-[13px] absolute text-neutral-700 text-xs font-medium font-['Montserrat'] leading-[19px]">date de début</div>
+    </div>
+    <div class="Frame301 w-[130px] h-[47px] px-[70px] py-3.5 left-[169px] top-[471px] absolute bg-pink-600 rounded-[5px] shadow border border-zinc-100 justify-center items-center gap-2.5 inline-flex">
+      <div class="Ajouter text-white text-sm font-semibold font-['Montserrat'] leading-[22.96px]">Ajouter</div>
+    </div>
+    <div class="InputTitle w-[596px] h-[73px] left-[169px] top-[230px] absolute">
+      <div class="Education left-0 top-0 absolute text-neutral-800 text-sm font-semibold font-['Red Hat Text']">Education</div>
+      <div class="Rectangle2661 w-[596px] h-[45px] left-0 top-[28px] absolute bg-white rounded-[5px] border border-neutral-600"></div>
+      <div class="Rectangle2662 w-[51px] h-[45px] left-[545px] top-[28px] absolute bg-pink-600 rounded-[5px]"></div>
+      <div class="Frame19352923 w-[412px] h-8 left-[12px] top-[35px] absolute justify-start items-start gap-[11px] inline-flex">
+        <div class="Frame19352922 px-2.5 py-1.5 bg-zinc-100 rounded-[11px] justify-center items-center gap-2.5 flex">
+          <div class="EcoleSuperieurDeGestionAnnee2021 text-neutral-700 text-xs font-medium font-['Montserrat'] leading-[19px]">Ecole superieur de gestion Annee 2021</div>
+          <div class="CarbonCloseFilled w-5 h-5 p-[1.25px] justify-center items-center flex"></div>
+        </div>
+        <div class="Frame19352923 px-2.5 py-1.5 bg-zinc-100 rounded-[11px] justify-center items-center gap-2.5 flex">
+          <div class="CertficatUdemy text-neutral-700 text-xs font-medium font-['Montserrat'] leading-[19px]">Certficat Udemy</div>
+          <div class="CarbonCloseFilled w-5 h-5 p-[1.25px] justify-center items-center flex"></div>
+        </div>
+      </div>
+    </div>
+    <div class="Group19352942 w-[765px] h-[527px] left-0 top-0 absolute">
+      <div class="Group19352933 w-[72px] h-[67px] left-0 top-0 absolute">
+        <div class="Rectangle3714 w-[72px] h-[67px] left-0 top-0 absolute bg-gradient-to-b from-green-400 to-pink-600 rounded-[17px] border border-zinc-100 border-opacity-30"></div>
+        <div class="Frame19352930 w-7 h-11 left-[22px] top-[11.50px] absolute flex-col justify-center items-center gap-[5px] inline-flex">
+          <div class="FontistoFolder w-[26px] h-6 justify-center items-center inline-flex"></div>
+          <div class="Projet text-black text-[9px] font-semibold font-['Montserrat'] leading-[14.76px]">Projet</div>
+        </div>
+      </div>
+      <div class="Group19352934 w-[72px] h-[67px] left-0 top-[115px] absolute">
+        <div class="Rectangle3714 w-[72px] h-[67px] left-0 top-0 absolute bg-gradient-to-b from-green-400 to-pink-600 rounded-[17px] border border-zinc-100 border-opacity-30"></div>
+        <div class="Frame19352930 w-[43px] h-11 left-[14.50px] top-[11.50px] absolute flex-col justify-center items-center gap-[5px] inline-flex">
+          <div class="TablerTemplate w-6 h-6 p-1 justify-center items-center inline-flex"></div>
+          <div class="Template text-black text-[9px] font-medium font-['Montserrat'] leading-[14.76px]">Template</div>
+        </div>
+      </div>
+      <div class="Group19352935 w-[72px] h-[67px] left-0 top-[230px] absolute">
+        <div class="Rectangle3714 w-[72px] h-[67px] left-0 top-0 absolute bg-gradient-to-b from-green-400 to-pink-600 rounded-[17px] border border-zinc-100 border-opacity-30"></div>
+        <div class="Frame19352930 w-[38px] h-[49px] left-[17px] top-[9px] absolute flex-col justify-center items-center gap-[5px] inline-flex">
+          <div class="BytesizeUpload w-6 h-6 pl-0.5 pr-[1.78px] pt-[3.25px] pb-[2.25px] justify-center items-center inline-flex"></div>
+          <div class="Media text-black text-xs font-medium font-['Montserrat'] leading-tight">Media</div>
+        </div>
+      </div>
+      <div class="Group19352936 w-[72px] h-[67px] left-0 top-[345px] absolute">
+        <div class="Rectangle3714 w-[72px] h-[67px] left-0 top-0 absolute bg-gradient-to-b from-green-400 to-pink-600 rounded-[17px] border border-zinc-100 border-opacity-30"></div>
+        <div class="Frame19352930 w-[33px] h-[50px] left-[19.50px] top-[8.50px] absolute flex-col justify-center items-center gap-[5px] inline-flex">
+          <div class="IonTextOutline w-[25px] h-[25px] relative"></div>
+          <div class="Texte text-black text-xs font-medium font-['Montserrat'] leading-tight">Texte</div>
+        </div>
+      </div>
+      <div class="Group19352937 w-[72px] h-[67px] left-0 top-[460px] absolute">
+        <div class="Rectangle3714 w-[72px] h-[67px] left-0 top-0 absolute bg-gradient-to-b from-green-400 to-pink-600 rounded-[17px] border border-zinc-100 border-opacity-30"></div>
+        <div class="Frame19352930 w-[58px] h-[49px] left-[7px] top-[9px] absolute flex-col justify-center items-center gap-[5px] inline-flex">
+          <div class="PhShapesLight w-6 h-6 pl-[1.69px] pr-[2.44px] pt-[2.44px] pb-[3.94px] justify-center items-center inline-flex"></div>
+          <div class="Lements text-black text-xs font-medium font-['Montserrat'] leading-tight">Élements</div>
+        </div>
+      </div>
+      <div class="CarbonAddFilled w-8 h-8 left-[724px] top-[265px] absolute"></div>
+      <div class="Group19352945 w-[294px] h-[45px] left-[169px] top-[327px] absolute">
+        <div class="Rectangle2663 w-[294px] h-[45px] left-0 top-0 absolute bg-white rounded-[5px] border border-neutral-600"></div>
+        <div class="NomFormation left-[12px] top-[13px] absolute text-neutral-700 text-xs font-medium font-['Montserrat'] leading-[19px]">Nom formation</div>
+      </div>
+      <div class="Group19352946 w-[283px] h-[45px] left-[482px] top-[327px] absolute">
+        <div class="Rectangle2663 w-[283px] h-[45px] left-0 top-0 absolute bg-white rounded-[5px] border border-neutral-600"></div>
+        <div class="NomDeLColeOuUniversit left-[12px] top-[13px] absolute text-neutral-700 text-xs font-medium font-['Montserrat'] leading-[19px]">Nom de l’école ou université</div>
+      </div>
+      <div class="Group19352947 w-[293px] h-[45px] left-[169px] top-[399px] absolute">
+        <div class="Rectangle2663 w-[293px] h-[45px] left-0 top-0 absolute bg-white rounded-[5px] border border-neutral-600"></div>
+        <div class="AnneeDeFormation left-[12px] top-[13px] absolute text-neutral-700 text-xs font-medium font-['Montserrat'] leading-[19px]">Annee de formation</div>
+      </div>
+      <div class="Group19352948 w-[281px] h-[45px] left-[484px] top-[399px] absolute">
+        <div class="Rectangle2663 w-[281px] h-[45px] left-0 top-0 absolute bg-white rounded-[5px] border border-neutral-600"></div>
+        <div class="TypeDeFormation left-[12px] top-[13px] absolute text-neutral-700 text-xs font-medium font-['Montserrat'] leading-[19px]">Type de formation</div>
+      </div>
+    </div>
+  </div>
+  <div class="Frame302 w-[130px] h-[47px] px-[70px] py-3.5 left-[803px] top-[461px] absolute bg-pink-600 rounded-[5px] shadow border border-zinc-100 justify-center items-center gap-2.5 inline-flex">
+    <div class="Ajouter text-white text-sm font-semibold font-['Montserrat'] leading-[22.96px]">Ajouter</div>
+  </div>
+</div>
+
+
+<router-link :to="{ name: 'Home' }" class="text-white text-base font-bold hover:text-yellow-200 cursor-pointer underline-on-hover">Accueil</router-link>
+<router-link :to="{ name: 'categorie' }" class="text-white text-base font-bold hover:text-yellow-200 cursor-pointer underline-on-hover">Catégorie</router-link>
+<router-link :to="{ name: 'Doc' }" class="text-white text-base font-bold hover:text-yellow-200 cursor-pointer underline-on-hover">Doc</router-link>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="DashboardGeneral w-[1382px] h-[5246px] relative bg-zinc-800">
+  <div class="UilBehanceAlt w-6 h-6 px-px pt-[5px] pb-1 left-[-59px] top-0 absolute justify-center items-center inline-flex"></div>
+  <div class="Rectangle3715 w-[1512px] h-[942px] left-[-59px] top-[883px] absolute bg-neutral-700"></div>
+  <div class="Rectangle3716 w-[1512px] h-[1042px] left-[-59px] top-[3191px] absolute bg-neutral-700"></div>
+  <div class="Ellipse3 w-[67px] h-[100px] left-[-73px] top-[4899px] absolute bg-gradient-to-tl from-sky-800 to-green-600 rounded-full blur-[200px]"></div>
+  <div class="Frame19352959 left-[107px] top-[41px] absolute justify-start items-end gap-[131px] inline-flex">
+    <div class="Frame19352923 justify-start items-start gap-[22px] flex">
+      <div class="Group19352917 w-[124px] h-[58px] relative">
+        <div class="Rectangle3700 w-[124px] h-[58px] left-0 top-0 absolute border-b-2"></div>
+        <div class="Frame19352727 w-[21px] h-5 left-0 top-[23px] absolute justify-center items-center gap-[9px] inline-flex">
+          <div class="Jp text-white text-base font-bold font-['Montserrat']">JP</div>
+        </div>
+      </div>
+    </div>
+    <div class="Frame19352922 justify-start items-start gap-[22px] flex">
+      <div class="Group19352917 w-[124px] h-[58px] relative">
+        <div class="Rectangle3700 w-[124px] h-[58px] left-0 top-0 absolute border-b-2"></div>
+        <div class="Frame19352727 w-[51px] h-5 left-[35px] top-[23px] absolute justify-center items-center gap-[9px] inline-flex">
+          <div class="Home text-white text-base font-bold font-['Montserrat']">Home </div>
+        </div>
+      </div>
+      <div class="Group19352918 w-[124px] h-[59px] relative">
+        <div class="Rectangle3700 w-[124px] h-[59px] left-0 top-0 absolute border-b-2"></div>
+        <div class="Frame19352727 w-[98px] h-5 left-[13px] top-[22px] absolute justify-center items-center gap-[9px] inline-flex">
+          <div class="Portfolio text-white text-base font-medium font-['Montserrat']">PORTFOLIO</div>
+        </div>
+      </div>
+      <div class="Group19352919 w-[148px] h-[59px] relative">
+        <div class="Rectangle3700 w-[148px] h-[59px] left-0 top-0 absolute border-b-2"></div>
+        <div class="Frame19352727 w-[101px] h-5 px-[17px] left-[12.50px] top-[22px] absolute justify-center items-center gap-[9px] inline-flex">
+          <div class="Services text-white text-base font-medium font-['Montserrat']">Services</div>
+        </div>
+      </div>
+      <div class="Group19352920 w-[148px] h-[59px] relative">
+        <div class="Rectangle3700 w-[148px] h-[59px] left-0 top-0 absolute border-r-2 border-white"></div>
+        <div class="Frame19352727 w-[99px] h-5 px-[17px] left-[13.50px] top-[22px] absolute justify-center items-center gap-[9px] inline-flex">
+          <div class="Contact text-white text-base font-medium font-['Montserrat']">Contact</div>
+        </div>
+      </div>
+    </div>
+    <div class="Frame1885 justify-start items-start gap-3.5 flex">
+      <div class="Face w-[50px] h-[50px] relative">
+        <div class="Rectangle2642 w-[50px] h-[50px] left-0 top-0 absolute bg-pink-600 rounded-[50px]"></div>
+        <div class="RiFacebookFill w-[30px] h-[30px] pl-[8.75px] pr-[8.12px] py-[2.50px] left-[8px] top-[13px] absolute justify-center items-center inline-flex"></div>
+      </div>
+      <div class="Insta w-[50px] h-[50px] relative">
+        <div class="Rectangle2644 w-[50px] h-[50px] left-0 top-0 absolute bg-pink-600 rounded-[50px]"></div>
+        <div class="RiInstagramLine w-[30px] h-[30px] p-[2.50px] left-[10px] top-[11px] absolute justify-center items-center inline-flex"></div>
+      </div>
+      <div class="Linkedin w-[50px] h-[50px] relative">
+        <div class="Rectangle2644 w-[50px] h-[50px] left-0 top-0 absolute bg-pink-600 rounded-[50px]"></div>
+        <div class="DashiconsLinkedin w-[35px] h-[35px] pl-[3.85px] pr-1 py-[3.50px] left-[7px] top-[4px] absolute justify-center items-center inline-flex"></div>
+      </div>
+    </div>
+  </div>
+  <div class="JoMerry left-[106px] top-[311px] absolute"><span style="text-white text-[59px] font-bold font-['Red Hat Text'] capitalize leading-[63px]">jo <br/>Merry</span><span style="text-amber-400 text-[59px] font-bold font-['Red Hat Text'] capitalize leading-[63px]">.</span></div>
+
+  
+</div>
+       
+
+      </form>
